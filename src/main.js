@@ -10,11 +10,14 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import Question1 from './components/Question1.vue';
 import Question2 from './components/Question2.vue';
 import Question3 from './components/Question3.vue';
+import FourZeroFour from './components/FourZeroFour.vue';
 
 const routes = [
+  { path: '/', component: Question1 },
   { path: '/question1', component: Question1 },
   { path: '/question2', component: Question2 },
   { path: '/question3', component: Question3 },
+  { path: '/*', component: FourZeroFour }, 
 ]
 
 const router = new VueRouter({
